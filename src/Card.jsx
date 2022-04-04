@@ -1,3 +1,3 @@
-export const Card = (props) => {
-    return (<div>This is {props.name}.</div>)
+export const Card = ({name}) => {
+    return (<div>This is {name}.</div>)
 }

@@ -5,7 +5,7 @@ import { Card } from "./Card";
 function App() {
   return (
     <div className="App">
-      <Card name="Kyle"/>
+      <Card name={`kyle sin lynn`} />
     </div>
   );
 }
