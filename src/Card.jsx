@@ -1,3 +1,11 @@
-export const Card = ({name}) => {
-    return (<div>This is {name}.</div>)
+function sayHello() {
+    console.log('Hello')
+}
+
+export const Card = ({ name, onClicked }) => {
+    return (
+        <div onClick={onClicked}>
+            This is {name}.
+        </div>
+    )
 }

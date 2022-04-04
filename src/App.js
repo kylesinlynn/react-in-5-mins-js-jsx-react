@@ -3,9 +3,13 @@ import './App.css';
 import { Card } from "./Card";
 
 function App() {
+  const onCardClicked = () => {
+    console.log('Hello')
+  }
+
   return (
     <div className="App">
-      <Card name={`kyle sin lynn`} />
+      <Card name={`Daniel`} onClicked={onCardClicked} />
     </div>
   );
 }
