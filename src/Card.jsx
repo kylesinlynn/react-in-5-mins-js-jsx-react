@@ -1,11 +1,19 @@
-function sayHello() {
-    console.log('Hello')
-}
+import React, { useRef } from "react"
 
-export const Card = ({ name, onClicked }) => {
+export const Card = ({ name }) => {
+    // useEffect(() => {
+    //     console.log('we are here')
+    // }, [name])
+
+    const divRef = useRef()
+
+    const changeStyle = () => {
+        console.log(divRef.current.style.color = 'red')
+    }
+
     return (
-        <div onClick={onClicked}>
-            This is {name}.
+        <div ref={useRef} onClick={changeStyle}>
+            This is {name}
         </div>
     )
 }
